@@ -30,3 +30,8 @@ class Student(models.Model):
     email = models.EmailField(unique=True)
     year = models.CharField(
         max_length=255, choices=YEAR_IN_SCHOOL_CHOICES, default=YEAR_IN_SCHOOL_FRESHMAN)
+
+    def __str__(self):
+        return self.lastname
+
+    # self.firstname

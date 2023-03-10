@@ -13,14 +13,13 @@ def all_students(request):
 
 def students_detail(request, id):
     students_detail = Student.objects.get(id=id)
-
-    return render(request, 'detail.html', {'detail': students_detail})
+    return render(request, 'detail.html', {'students_detail': students_detail})
 
 
 def home_page(request):
     # default to Stranger if no user_name provided
     name = request.GET.get("user_name", "Stranger")
     message = f"<html><h1>Welcome{name} to my Website</h1></html>"
-   # return HttpResponse(message)
+    # return HttpResponse(message)
     # return render(request, 'base.html')
     return render(request, 'base.html', {'name': name})
