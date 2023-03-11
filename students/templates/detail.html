@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body>
-    <h1>{{ student.firstname }} {{ student.lastname }}</h1>
-    <p>DOB:{{ student.date_of_birth }}</p>
-    <p>PHONE:{{ student.phone }}</p>
-    <p>CITY:{{ student.city }}</p>
-    <p>ZIPCODE:{{ student.zip }}</p>
-    <p>STATE:{{ student.state }}</p>
-    <p>GRADUATION:{{ student.graduation}}</p>
-    <p>EMAIL:{{ student.email }}</p>
-    <p>YEAR:{{ student.year }}</p>
-    <hr />
-    <p>Back to <a href="/students">Student</a></p>
-  </body>
+  
+</body>
+<h1>STUDENT NAME:-{{ students_detail.lastname }} {{ students_detail.firstname }}</h1>
+
+<p><strong>DATE OF BIRTH:</strong>{{ students_detail.date_of_birth }}</p>
+<p><strong>PHONE:</strong>{{ students_detail.phone }}</p>
+<p><strong>CITY:</strong>{{ students_detail.city }}</p>
+<p><strong>ZIPCODE:</strong>{{ students_detail.zip }}</p>
+<p><strong>STATE:</strong>{{ students_detail.state }}</p>
+<p><strong>GRADUATION:</strong>{{ students_detail.graduation}}</p>
+<p><strong>EMAIL:</strong>{{ students_detail.email }}</p>
+<p><strong>YEAR:</strong>{{ students_detail.year }}</p>
+<hr />
+<p>Back to <a href="/students">Student</a></p>
+</body>
 </html>
